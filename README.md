@@ -29,7 +29,9 @@ pip install -r requirements.txt
 __Event Scheduler__
 
 The event scheduler uses a trained Naive Bayes Classifier to classify user input into scheduling commands. 
-To use it, run the `train_classifier.py` script.
+To use it, run the `train_classifier.py` script. 
+
+The model saves into `model/classifier.pkl`
 
 __NER Model__
 The NER model is trained to extract entities such as event names, dates, times, and attendees from text. To use it, follow the instructions below:
@@ -44,4 +46,4 @@ After training, save the NER model using `nlp.to_disk("myapp/nlp_models/parser")
 
 3. Test the model:
 
-You can test the trained NER model using the parser_test.py script. Provide new text inputs to see how the model extracts entities.
+You can test the trained NER model using the `test_ner_model.py` script. Provide new text inputs to see how the model extracts entities.
